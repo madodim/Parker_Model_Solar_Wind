@@ -1,19 +1,19 @@
 # Parker_Model_Solar_Wind
 A MATLAB-based model of the Parker solar wind solution with physical unit conversion, density profiles, and comparison to empirical coronal models.
 
-**Solar Wind Model - Parker Equation and Solar Corona Dynamics**
+**Solar Wind Model - Parker Equation and Solar Corona Dynamics**\\
 This repository contains MATLAB scripts for modeling the solar wind based on the Parker solar wind equation. It includes visualization of isodense contours, selection of physically relevant wind solutions, interpolation, transformation into real physical units (velocity, distance, density), and comparison with empirical solar atmospheric models.
 
-**Code Overview**
-1. Isodense Contours
+**Code Overview**\\
+1. Isodense Contours\\
 Plots contours of constant "C" values from the dimensionless Parker solar wind equation:
 - Shows the structure of possible solutions in the (ξ, u) space.
 - Marks the critical point where the velocity equals the speed of sound.
 
-2. Solution Choice
+2. Solution Choice\\
 Extracts and filters the physically valid solution for a chosen isodense value (C = -3), selecting points that start subsonic and end supersonic.
 
-3. Interpolation
+3. Interpolation\\
 Interpolates the selected Parker wind solution using linear interpolation to create a smooth solar wind velocity profile in normalized units.
 
 4. Velocity and Distance (Physical Units)
@@ -29,7 +29,7 @@ Interpolates the selected Parker wind solution using linear interpolation to cre
 6. Save Density and Frequency Profiles
 - Saves the density and plasma frequency (Hz) at selected heliocentric distances (in solar radii) to .txt files. Useful for radio burst and solar wind diagnostics.
 
-7. Atmospheric Models
+7. Atmospheric Models\\
 Implements widely used empirical models: Newkirk, Saito, Leblanc, and Vršnak. Compares their predicted plasma densities across heliocentric distances.
 
 **Files**
@@ -37,7 +37,7 @@ Implements widely used empirical models: Newkirk, Saito, Leblanc, and Vršnak. C
 - Output files with plasma density and frequency profiles. Change the file name and the directory accordingly.
 - README.md: Documentation file (you’re reading it!).
 
-**📌 Requirements**
+**📌 Requirements**\\
 MATLAB (R2018+ recommended)
 No external toolboxes required
 
