@@ -275,7 +275,7 @@ r_desired = 1:10:250; % [solar redii]
     % Density in cm^(-3)
     n_newk = 4.2 * 1E4 * exp(9.95 ./ r_desired); % Newkirk
 
-    n_saito = 1E8 * (3.09 * r_desired.^(-16) + 1.58 * r_desired.^(-6) + 0.0251 * r_desired.^(-2.5)); % Saito for ö = 0
+    n_saito = 1E8 * (3.09 * r_desired.^(-16) + 1.58 * r_desired.^(-6) + 0.0251 * r_desired.^(-2.5)); % Saito for Ã¶ = 0
 
     n_leb = 1E5 * (3.3 * r_desired.^(-2) + 41 * r_desired.^(-4) + 800 * r_desired.^(-6)); % Leblanc
 
@@ -351,6 +351,7 @@ sim_data = dlmread(sim_filename, '', 1, 0);
 r_sim = sim_data(:,1);      % Distance (R_solar)
 n_sim = sim_data(:,2);      % Denisty (cm^(-3))
 
+% From the models.txt file, please create a new txt file, keeping the first matrix with only the distance and density values!
 % Load theoretical model data
 theo_filename = 'models_d.txt';
 theo_data = dlmread(theo_filename, '', 1, 0);
